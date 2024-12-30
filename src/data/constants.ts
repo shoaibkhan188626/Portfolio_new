@@ -1,12 +1,11 @@
 // thoda zada ts ho gya idhar
 export enum SkillNames {
-  JS = "js",
-  TS = "ts",
   HTML = "html",
   CSS = "css",
+  JS = "js",
+  TS = "ts",
   REACT = "react",
-  VUE = "vue",
-  NEXTJS = "nextjs",
+  REACT_NATIVE = "react-native",
   TAILWIND = "tailwind",
   NODEJS = "nodejs",
   EXPRESS = "express",
@@ -14,16 +13,10 @@ export enum SkillNames {
   MONGODB = "mongodb",
   GIT = "git",
   GITHUB = "github",
-  PRETTIER = "prettier",
-  NPM = "npm",
-  FIREBASE = "firebase",
-  WORDPRESS = "wordpress",
   LINUX = "linux",
   DOCKER = "docker",
   NGINX = "nginx",
   AWS = "aws",
-  VIM = "vim",
-  VERCEL = "vercel",
 }
 export type Skill = {
   id: number;
@@ -34,6 +27,22 @@ export type Skill = {
   icon: string;
 };
 export const SKILLS: Record<SkillNames, Skill> = {
+  [SkillNames.HTML]: {
+    id: 3,
+    name: "html",
+    label: "HTML",
+    shortDescription: "the internet's granddad,  still bussin' fr fr! 💀🔥",
+    color: "#e34c26",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  [SkillNames.CSS]: {
+    id: 4,
+    name: "css",
+    label: "CSS",
+    shortDescription: "styling with the ultimate drip, no cap 💁‍♂️🔥",
+    color: "#563d7c",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
   [SkillNames.JS]: {
     id: 1,
     name: "js",
@@ -51,22 +60,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     color: "#007acc",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
   },
-  [SkillNames.HTML]: {
-    id: 3,
-    name: "html",
-    label: "HTML",
-    shortDescription: "the internet's granddad,  still bussin' fr fr! 💀🔥",
-    color: "#e34c26",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-  },
-  [SkillNames.CSS]: {
-    id: 4,
-    name: "css",
-    label: "CSS",
-    shortDescription: "styling with the ultimate drip, no cap 💁‍♂️🔥",
-    color: "#563d7c",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-  },
+
   [SkillNames.REACT]: {
     id: 5,
     name: "react",
@@ -76,23 +70,13 @@ using use = useUsing("use")`,
     color: "#61dafb",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
-  [SkillNames.VUE]: {
+  [SkillNames.REACT_NATIVE]:{
     id: 6,
-    name: "vue",
-    label: "Vue",
-    shortDescription:
-      "the chill pill for your frontend, it hits different! 🟢😌",
-    color: "#41b883",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  },
-  [SkillNames.NEXTJS]: {
-    id: 7,
-    name: "nextjs",
-    label: "Next.js",
-    shortDescription:
-      "the drama queen of front-end frameworks, and we stan! 👑📜",
-    color: "#fff",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    name: "react-native",
+    label: "React Native",
+    shortDescription: "React but make it mobile, period! 📱🔥",
+    color: "#61dafb",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react",
   },
   [SkillNames.TAILWIND]: {
     id: 8,
@@ -150,39 +134,6 @@ using use = useUsing("use")`,
     color: "#000000",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
   },
-  [SkillNames.PRETTIER]: {
-    id: 15,
-    name: "prettier",
-    label: "Prettier",
-    shortDescription: "making your code not a whole mess, thank u next 🧹✨",
-    color: "#f7b93a",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prettier/prettier-original.svg",
-  },
-  [SkillNames.NPM]: {
-    id: 16,
-    name: "npm",
-    label: "NPM",
-    shortDescription: "package manager said 'I gotchu fam', period! 📦💯",
-    color: "#fff",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-  },
-  [SkillNames.FIREBASE]: {
-    id: 17,
-    name: "firebase",
-    label: "Firebase",
-    shortDescription:
-      "your app's ultimate wingman, but watch out, vendor lock-in vibes! 🔥👌",
-    color: "#ffca28",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-  [SkillNames.WORDPRESS]: {
-    id: 18,
-    name: "wordpress",
-    label: "WordPress",
-    shortDescription: "the grandpa of CMS, still rocking that cane 🧓👴",
-    color: "#007acc",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
-  },
   [SkillNames.LINUX]: {
     id: 19,
     name: "linux",
@@ -215,23 +166,6 @@ using use = useUsing("use")`,
       "always extra, making everything more complicated, period! 🌐👨‍💻",
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg",
-  },
-  [SkillNames.VIM]: {
-    id: 23,
-    name: "vim",
-    label: "Vim",
-    shortDescription: "exit? In this economy? Ight, imma head out! 🚪🏃",
-    color: "#e34c26",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-  },
-  [SkillNames.VERCEL]: {
-    id: 24,
-    name: "vercel",
-    label: "Vercel",
-    shortDescription:
-      "The triangle compony, helps you deploy and go touch grass! 🚀🌿",
-    color: "#6cc24a",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
   },
 };
 

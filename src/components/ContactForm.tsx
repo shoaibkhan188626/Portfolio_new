@@ -97,7 +97,7 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <p className="text-sm text-muted-foreground">
-          I&apos;ll never share your data with anyone else. Pinky promise!
+          I&apos;I guarantee that your data will remain strictly confidential and will never be shared with anyone else. Rest assured.
         </p>
       </div>
       <Button

@@ -62,7 +62,6 @@ const SlideShow = ({ images }: { images: string[] }) => {
               </DialogTrigger>
               <DialogContent className="min-w-[90vw] h-[90vh] bg-transparent outline-none border-none p-0 m-0">
                 <DialogHeader className="w-full">
-                  {/* <DialogTitle>Are you absolutely sure?</DialogTitle> */}
                   <DialogDescription>
                     {image.split("/").pop()}
                   </DialogDescription>

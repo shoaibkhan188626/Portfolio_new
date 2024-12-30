@@ -4,12 +4,9 @@ import { useMouse } from "@/hooks/use-mouse";
 import { useThrottle } from "@/hooks/use-throttle";
 import { MousePointer2 } from "lucide-react";
 import React, { useContext, useEffect, useRef, useState } from "react";
-
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useMediaQuery } from "@/hooks/use-media-query";
 
-// TODO: add clicking animation
-// TODO: listen to socket disconnect
 const RemoteCursors = () => {
   const { socket, users: _users, setUsers } = useContext(SocketContext);
   const isMobile = useMediaQuery("(max-width: 768px)");

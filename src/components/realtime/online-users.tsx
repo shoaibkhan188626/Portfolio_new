@@ -138,7 +138,6 @@ const OnlineUsers = () => {
               className="w-full h-full modall overflow-auto"
               ref={chatContainer}
             >
-              {/* own, other and sys */}
               {msgs.map((msg, i) => (
                 <div key={i}>
                   <span>
@@ -168,17 +167,6 @@ const OnlineUsers = () => {
             </div>
           </TabsContent>
         </Tabs>
-        {/* <div className="flex flex-col items-center justify-between"> */}
-        {/*   <div className="w-full h-10 border-2 border-gray-600 flex rounded-lg"> */}
-        {/*     <motion.div className="w-1/3 h-7 bg-slate-500 absolute"></motion.div> */}
-        {/*     <div className="flex justify-center items-center z-3 flex-1"> */}
-        {/*       users */}
-        {/*     </div> */}
-        {/*     <div className="flex justify-center items-center z-3 flex-1"> */}
-        {/*       chats */}
-        {/*     </div> */}
-        {/*   </div> */}
-        {/* </div> */}
       </PopoverContent>
     </Popover>
   );

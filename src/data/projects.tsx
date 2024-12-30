@@ -26,6 +26,7 @@ import {
   SiThreedotjs,
   SiTypescript,
   SiVuedotjs,
+  SiAndroid
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -415,15 +416,6 @@ const projects: Project[] = [
             CouponLuxury isn&apos;t just a website; it&apos;s your personal deal-hunting
             assistant, ensuring you never miss out on a bargain!
           </p>
-          {/* <TypographyP className="my-4 mt-8">
-          <strong>Misc:</strong>
-          Hosted not one, not two, but THREE coding contests (Codemacha) during
-          college. Safe to say, Coding Ducks passed the vibe check.
-        </TypographyP>
-        <TypographyP className="my-4 mt-8">
-          <strong>Target Audience:</strong>
-          For all the novice coders out there ready to make their mark.
-        </TypographyP> */}
         </div>
       );
     },

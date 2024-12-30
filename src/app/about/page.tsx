@@ -33,8 +33,6 @@ import {
   SiVercel,
   SiVisualstudiocode,
 } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
-
 // @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
@@ -43,43 +41,31 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "naresh.khatri2345@gmail",
-    href: "mailto:naresh.khatri2345@gmail.com",
+    content: "shoaibullakhan15@gmail.com",
+    href: "mailto:shoaibullakhan15@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
     name: "Phone",
-    content: "1234567890",
-    href: "tel:1234567890",
+    content: "+918830488649",
+    href: "tel:+918830488649",
     icon: <FaPhone height={"50px"} />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/naresh-khatri/",
-    content: "/naresh-khatri",
+    href: "https://www.linkedin.com/in/shoaib-ulla-khan-80302033a",
+    content: "/shoaib-ulla-khan-80302033a",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Naresh-Khatri",
-    content: "/naresh-khatri",
+    href: "https://github.com/shoaibkhan188626",
+    content: "/shoaibkhan188626",
     icon: <FaGithub height={"50px"} />,
   },
 ];
 
 const TOOLS = [
-  {
-    name: "JavaScript",
-    content: "JavaScript is a high-level, interpreted programming language",
-    icon: <SiJavascript size={"50px"} color={"#f0db4f"} />,
-    color: "#f0db4f",
-  },
-  {
-    name: "TypeScript",
-    content: "TypeScript is a superset of JavaScript that compiles to plain JS",
-    icon: <SiTypescript size={"50px"} color={"#007acc"} />,
-    color: "#007acc",
-  },
   {
     name: "HTML",
     content: "Next.js is a React framework for production",
@@ -93,16 +79,29 @@ const TOOLS = [
     color: "#563d7c",
   },
   {
-    name: "Nodejs",
-    content: "Next.js is a React framework for production",
-    icon: <FaNodeJs size={"50px"} color="#6cc24a" />,
-    color: "#6cc24a",
+    name: "JavaScript",
+    content: "JavaScript is a high-level, interpreted programming language",
+    icon: <SiJavascript size={"50px"} color={"#f0db4f"} />,
+    color: "#f0db4f",
   },
+  {
+    name: "TypeScript",
+    content: "TypeScript is a superset of JavaScript that compiles to plain JS",
+    icon: <SiTypescript size={"50px"} color={"#007acc"} />,
+    color: "#007acc",
+  },
+
   {
     name: "React.js",
     content: "Next.js is a React framework for production",
     icon: <FaReact size={"50px"} color="#61dafb" />,
     color: "#61dafb",
+  },
+  {
+    name: "Nodejs",
+    content: "Next.js is a React framework for production",
+    icon: <FaNodeJs size={"50px"} color="#6cc24a" />,
+    color: "#6cc24a",
   },
   {
     name: "Docker",
@@ -115,12 +114,6 @@ const TOOLS = [
     content: "Next.js is a React framework for production",
     icon: <DiNginx size={"50px"} color="#008000" />,
     color: "#008000",
-  },
-  {
-    name: "Vue.js",
-    content: "Next.js is a React framework for production",
-    icon: <FaVuejs size={"50px"} color="#41b883" />,
-    color: "#41b883",
   },
   {
     name: "Express.js",
@@ -206,19 +199,8 @@ const TOOLS = [
     icon: <FaLinux size={"50px"} color="#fff" />,
     color: "#000000",
   },
-  {
-    name: "Kubuntu",
-    content: "Next.js is a React framework for production",
-    // give me correct color for  kubuntu
-    icon: <SiKubuntu size={"50px"} color="#0077C4" />,
-    color: "#000000",
-  },
-  {
-    name: "Terminal",
-    content: "Next.js is a React framework for production",
-    icon: <TbTerminal2 size={"50px"} color="#fff" />,
-    color: "#000000",
-  },
+
+
   {
     name: "AWS",
     content: "Next.js is a React framework for production",
@@ -251,7 +233,7 @@ function Page() {
                 />
               </div>
               <div className="flex flex-col gap-3 lg:items-center ml-10 md:ml-20 lg:ml-0">
-                <p className="text-center text-xl">Naresh Khatri</p>
+                <p className="text-center text-xl">Shoaib Khan</p>
                 <div className="text-xs bg-zinc-700 w-fit px-3 py-1 rounded-full">
                   Web Developer
                 </div>
@@ -287,7 +269,7 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Naresh, a Fullstack developer passionate about
+              Hey there! I&apos;m Shoaib, a Fullstack developer passionate about
               creating meaningful digital experiences. With great in Web
               development, I thrive on turning ideas into reality through coding
               and design. My journey began with a fascination for technology and
@@ -331,34 +313,6 @@ function Page() {
                 </Splide>
               )}
             </div>
-            {/* <div className="">
-              <Splide
-                options={{
-                  type: "loop",
-                  interval: 2000,
-                  autoplay: true,
-                  pagination: false,
-                  speed: 3000,
-                  perPage: 5,
-                  perMove: 1,
-                  rewind: true,
-                  easing: "cubic-bezier(0.25, 1, 0.5, 1)",
-                  arrows: false,
-                }}
-                aria-label="My Favorite Images"
-              >
-                {TOOLS.map((tool) => (
-                  <SplideSlide key={tool.name}>
-                    <div
-                      key={tool.name}
-                      className="w-fit p-2 border-[.5px] border-zinc-600 rounded-md"
-                    >
-                      {tool.icon}
-                    </div>
-                  </SplideSlide>
-                ))}
-              </Splide>
-            </div> */}
           </div>
         </main>
       </div>
